@@ -1,0 +1,45 @@
+<user-list></user-list>
+<user-details></user-details>
+<h2>Template Driven Form</h2>
+<h4 class="badge badge-primary">This form is 2 way data binding</h4>
+<!-- <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm.value)">
+  <div class="form-group">
+    <label for="exampleInputName">Name</label>
+    <input type="text" #refName="ngModel" required  minlength="4" maxlength="10" class="form-control" name="name" ngModel>
+      <div *ngIf="refName.errors && (refName.dirty||refName.touched)" class="alert alert-danger">
+        <div [hidden]="!refName.errors.required">
+          Please enter name
+        </div>
+        <div [hidden]="!refName.errors.minlength">
+          Please enter atleast 4 character
+        </div>
+        <div [hidden]="!refName.errors.maxlength">
+          Name cannot exceed 10 character
+        </div>
+      </div>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail">Email</label>
+    <input type="text" class="form-control" name="email" ngModel>
+  </div>
+  <div ngModelGroup="address">
+    <div class="form-group">
+      <label for="exampleInputStreet">Street</label>
+      <input type="text" class="form-control" name="street" ngModel>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputCity">City</label>
+      <input type="text" class="form-control" name="city" ngModel>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPostalCode">Postal Code</label>
+      <input type="text" #refPostalcode="ngModel" class="form-control" pattern="^[1-9][0-9]{5}$" name="postalcode" ngModel>
+      <div *ngIf="refPostalcode.errors && (refPostalcode.dirty||refPostalcode.touched)" class="alert alert-danger">
+        <div [hidden]="!refPostalcode.errors.pattern">
+          Please enter 6 digit number
+        </div>
+      </div>
+    </div>
+  </div>
+  <button type="submit" [disabled]="!userForm.valid" class="btn btn-primary">Submit</button>
+</form> -->
